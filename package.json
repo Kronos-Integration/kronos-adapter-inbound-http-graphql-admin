@@ -1,41 +1,46 @@
 {
   "name": "kronos-adapter-inbound-http-graphql",
-  "version": "0.0.0",
+  "version": "0.0.0-semantic-release",
   "description": "Base flow implementation",
   "keywords": [
     "kronos-step"
   ],
   "main": "index.js",
   "scripts": {
-    "cover": "node ./node_modules/istanbul/lib/cli.js cover --hook-run-in-context ./node_modules/mocha/bin/_mocha -- --R spec --U exports tests",
-    "doc": "jsdoc lib/*.js",
-    "test": "mocha tests/*_test.js",
+    "cover": "node ./node_modules/istanbul/lib/cli.js cover --hook-run-in-context ./node_modules/mocha/bin/_mocha -- --R spec --U exports tests/*_test.js",
+    "doc": "node ./node_modules/.bin/jsdoc lib/*.js",
+    "test": "node ./node_modules/.bin/mocha tests/*_test.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kronos-Integration/kronos-adapter-inbound-http-graphql.git"
+    "url": "https://github.com/Kronos-Integration/kronos-adapter-inbound-http-graphql-admin.git"
   },
   "bugs": {
-    "url": "https://github.com/Kronos-Integration/kronos-adapter-inbound-http-graphql/issues"
+    "url": "https://github.com/Kronos-Integration/kronos-adapter-inbound-http-graphql-admin/issues"
   },
-  "homepage": "https://github.com/Kronos-Integration/kronos-adapter-inbound-http-graphql#readme",
+  "homepage": "https://github.com/Kronos-Integration/kronos-adapter-inbound-http-graphql-admin#readme",
   "engines": {
-    "node": ">=4.2.1"
+    "node": ">=6.1"
   },
   "devDependencies": {
-    "chai": "3.4.1",
-    "istanbul": "^0.4.1",
-    "mocha": "2.3.4",
-    "semantic-release": "6.2.1"
+    "chai": "3.5.0",
+    "istanbul": "0.4.3",
+    "mocha": "2.4.5",
+    "semantic-release": "6.2.2",
+    "jsdoc": "3.4.0",
+    "cz-conventional-changelog": "1.1.6"
   },
-  "contributors": [{
-    "name": "Torsten Link",
-    "email": "torstenlink@gmx.de"
-  }, {
-    "name": "Markus Felten",
-    "email": "markus.felten@gmx.de"
-  }],
+  "contributors": [
+    {
+      "name": "Torsten Link",
+      "email": "torstenlink@gmx.de"
+    },
+    {
+      "name": "Markus Felten",
+      "email": "markus.felten@gmx.de"
+    }
+  ],
   "license": "BSD-2-Clause",
   "dependencies": {
     "graphql": "^0.4.14",
@@ -43,5 +48,10 @@
     "koa-mount": "^1.3.0",
     "kronos-adapter-inbound-http": "^3.4.2",
     "kronos-step": "^5.1.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
