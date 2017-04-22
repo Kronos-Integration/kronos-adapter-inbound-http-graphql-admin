@@ -44,7 +44,7 @@
   "license": "BSD-2-Clause",
   "dependencies": {
     "graphql": "^0.9.3",
-    "koa-graphql": "^0.6.2",
+    "koa-graphql": "^0.6.3",
     "koa-mount": "^3.0.0",
     "kronos-adapter-inbound-http": "^3.4.2",
     "kronos-step": "^5.3.8"
