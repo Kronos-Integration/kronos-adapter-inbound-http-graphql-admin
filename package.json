@@ -14,22 +14,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Kronos-Integration/kronos-adapter-inbound-http-graphql-admin.git"
+    "url": "git+https://github.com/Kronos-Integration/kronos-adapter-inbound-http-graphql.git"
   },
   "bugs": {
-    "url": "https://github.com/Kronos-Integration/kronos-adapter-inbound-http-graphql-admin/issues"
+    "url": "https://github.com/Kronos-Integration/kronos-adapter-inbound-http-graphql/issues"
   },
-  "homepage": "https://github.com/Kronos-Integration/kronos-adapter-inbound-http-graphql-admin#readme",
+  "homepage": "https://github.com/Kronos-Integration/kronos-adapter-inbound-http-graphql#readme",
   "engines": {
-    "node": ">=6.9.1"
+    "node": ">=8.4.0"
   },
   "devDependencies": {
-    "chai": "3.5.0",
+    "chai": "^4.1.2",
     "cz-conventional-changelog": "2.0.0",
     "istanbul": "0.4.5",
     "jsdoc": "3.4.3",
-    "mocha": "3.3.0",
-    "semantic-release": "6.3.2"
+    "mocha": "^3.5.2",
+    "semantic-release": "^8.0.0"
   },
   "contributors": [
     {
@@ -49,9 +49,12 @@
     "kronos-adapter-inbound-http": "^3.4.2",
     "kronos-step": "^5.3.8"
   },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+  "xo": {
+    "space": true
+  },
+  "template": {
+    "repository": {
+      "url": "https://github.com/Kronos-Tools/npm-package-template-minimal.git"
     }
   }
 }
