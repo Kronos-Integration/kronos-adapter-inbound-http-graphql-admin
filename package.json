@@ -1,36 +1,11 @@
 {
   "name": "kronos-adapter-inbound-http-graphql",
   "version": "0.0.0-semantic-release",
+  "main": "index.js",
   "description": "Base flow implementation",
   "keywords": [
     "kronos-step"
   ],
-  "main": "index.js",
-  "scripts": {
-    "cover": "./node_modules/istanbul/lib/cli.js cover --hook-run-in-context ./node_modules/mocha/bin/_mocha -- --R spec --U exports tests/*_test.js",
-    "doc": "./node_modules/.bin/jsdoc lib/*.js",
-    "test": "./node_modules/.bin/mocha tests/*_test.js",
-    "semantic-release": "semantic-release"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Kronos-Integration/kronos-adapter-inbound-http-graphql.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Kronos-Integration/kronos-adapter-inbound-http-graphql/issues"
-  },
-  "homepage": "https://github.com/Kronos-Integration/kronos-adapter-inbound-http-graphql#readme",
-  "engines": {
-    "node": ">=8.9.3"
-  },
-  "devDependencies": {
-    "chai": "^4.1.2",
-    "cz-conventional-changelog": "2.0.0",
-    "istanbul": "0.4.5",
-    "jsdoc": "3.4.3",
-    "mocha": "^3.5.3",
-    "semantic-release": "^11.1.0"
-  },
   "contributors": [
     {
       "name": "Torsten Link",
@@ -42,6 +17,12 @@
     }
   ],
   "license": "BSD-2-Clause",
+  "scripts": {
+    "cover": "./node_modules/istanbul/lib/cli.js cover --hook-run-in-context ./node_modules/mocha/bin/_mocha -- --R spec --U exports tests/*_test.js",
+    "doc": "./node_modules/.bin/jsdoc lib/*.js",
+    "test": "./node_modules/.bin/mocha tests/*_test.js",
+    "semantic-release": "semantic-release"
+  },
   "dependencies": {
     "graphql": "^0.9.5",
     "koa-graphql": "^0.7.0",
@@ -49,6 +30,25 @@
     "kronos-adapter-inbound-http": "^3.4.2",
     "kronos-step": "^5.3.8"
   },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "cz-conventional-changelog": "2.0.0",
+    "istanbul": "0.4.5",
+    "jsdoc": "3.4.3",
+    "mocha": "^3.5.3",
+    "semantic-release": "^11.1.0"
+  },
+  "engines": {
+    "node": ">=8.9.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kronos-Integration/kronos-adapter-inbound-http-graphql.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kronos-Integration/kronos-adapter-inbound-http-graphql/issues"
+  },
+  "homepage": "https://github.com/Kronos-Integration/kronos-adapter-inbound-http-graphql#readme",
   "xo": {
     "space": true
   },
