@@ -43,12 +43,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kronos-Integration/kronos-adapter-inbound-http-graphql.git"
+    "url": "git+https://github.com/Kronos-Integration/kronos-adapter-inbound-http-graphql-admin.git"
   },
   "bugs": {
-    "url": "https://github.com/Kronos-Integration/kronos-adapter-inbound-http-graphql/issues"
+    "url": "https://github.com/Kronos-Integration/kronos-adapter-inbound-http-graphql-admin/issues"
   },
-  "homepage": "https://github.com/Kronos-Integration/kronos-adapter-inbound-http-graphql#readme",
+  "homepage": "https://github.com/Kronos-Integration/kronos-adapter-inbound-http-graphql-admin#readme",
   "xo": {
     "space": true
   },
