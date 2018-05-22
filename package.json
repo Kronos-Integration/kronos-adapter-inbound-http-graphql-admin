@@ -35,7 +35,7 @@
     "istanbul": "0.4.5",
     "jsdoc": "3.4.3",
     "mocha": "^5.1.1",
-    "semantic-release": "^15.4.1"
+    "semantic-release": "^15.5.0"
   },
   "engines": {
     "node": ">=8.11"
