@@ -34,11 +34,11 @@
     "chai": "^4.1.2",
     "istanbul": "0.4.5",
     "jsdoc": "3.4.3",
-    "mocha": "^5.1.1",
-    "semantic-release": "^15.5.0"
+    "mocha": "^5.2.0",
+    "semantic-release": "^15.9.9"
   },
   "engines": {
-    "node": ">=10.6"
+    "node": ">=8.11.4"
   },
   "repository": {
     "type": "git",
