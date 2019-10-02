@@ -34,7 +34,7 @@
     "chai": "^4.2.0",
     "istanbul": "0.4.5",
     "jsdoc": "3.4.3",
-    "mocha": "^6.2.0",
+    "mocha": "^6.2.1",
     "semantic-release": "^15.13.24"
   },
   "engines": {
